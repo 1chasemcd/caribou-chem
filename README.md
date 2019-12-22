@@ -1,2 +1,2 @@
 # CaribouChem
- 
+ A 3D chemistry simulation which demonstrates the small-scale interactions between subatomic particles (Protons, Neutrons, and Electrons) based on coulombs law. This simulation is not yet fully functional, as the Strong Neuclear force is yet to be added. Until this addition is made, protons and neutrons have no force holding them together, and so will not form larger atoms. This simulation can be found online at caribouchem.web.app. It was created using p5.js and is hosted using Firebase hosting. The simulation is functional on both desktop and mobile devices.
