@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaribouChem</title>
+    <script src="p5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- For Webclip -->
+    <link rel="apple-touch-icon" href="icons/caribou.png"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  </head>
+  <body>
+    <div id="canvasholder" class="canvasholder"></div>
+    <div class="circle"></div>
+    <div id="gui" class="gui">
+      <div class="left">
+        <div class="button" style="background-color: #5070ff"
+          onclick="gui.getClick('proton')">P⁺</div>
+
+        <div class="button" style="background-color: #20cccc"
+          onclick="gui.getClick('neutron')">N⁰</div>
+
+        <div class="button" style="background-color: #882020"
+          onclick="gui.getClick('electron')">e⁻</div>
+      </div>
+
+      <div class="right">
+        <div class="button" style="background-color: #f00"
+          onclick="gui.getClick('clear')">
+          <img src="icons/clear.png" alt="3">
+        </div>
+
+        <div class="button" style="background-color: #aaa"
+          onclick="gui.getClick('pause')">
+          <img src="icons/pause.png" alt="3">
+        </div>
+
+        <div class="button" style="background-color: #aaa"
+          onclick="gui.getClick('move')">
+          <img src="icons/move.png" alt="3">
+        </div>
+
+        <div class="button selected" style="background-color: #aaa"
+          onclick="gui.getClick('pan')">
+          <img src="icons/pan.png" alt="3">
+        </div>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.2.1/firebase-app.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

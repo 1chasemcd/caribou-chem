@@ -1,0 +1,116 @@
+body
+{
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+            user-select: none;
+}
+
+.canvasholder
+{
+  position: absolute;
+}
+
+.gui
+{
+  position: absolute;
+  width: 100%;
+}
+
+.button
+{
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 8vmin;
+  font-size: 4vmin;
+  line-height: 6vmin;
+  text-align: center;
+  font-family: 'verdana';
+  font-weight: bold;
+  margin: 1vmin;
+}
+
+.selected
+{
+  margin: 0.5vmin;
+  border-width: 0.5vmin;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.gui img
+{
+  width: 4vmin;
+  height: 4vmin;
+  margin: 1vmin;
+}
+
+@media only screen and (max-width: 7in), (max-height: 7in)
+{
+  .button
+  {
+    width: 8vmin;
+    height: 8vmin;
+    font-size: 5.4vmin;
+    line-height: 8vmin;
+  }
+
+  .gui img
+  {
+    width: 5.4vmin;
+    height: 5.4vmin;
+    margin: 1.3vmin;
+  }
+}
+
+@media only screen and (max-width: 5in), (max-height: 5in)
+{
+  .button
+  {
+    width: 12vmin;
+    height: 12vmin;
+    font-size: 8vmin;
+    line-height: 12vmin;
+  }
+
+  .gui img
+  {
+    width: 8vmin;
+    height: 8vmin;
+    margin: 2vmin;
+  }
+}
+
+.left
+{
+  float: left;
+}
+
+.right
+{
+  float: right;
+}
+
+@media only screen and (orientation: portrait)
+{
+  .button
+  {
+    float: left;
+  }
+}
+
+.circle
+{
+  margin: calc(50vh - 50vmin) calc(50vw - 50vmin);
+  position: absolute;
+  border-width: 0.5vmin;
+  border-radius: 50vmin;
+  border-style: solid;
+  border-color: #fff;
+  width: 99vmin;
+  height: 99vmin;
+}
